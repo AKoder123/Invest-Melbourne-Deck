@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "deckId": "invest-melbourne-board-prep",
+    "title": "Invest Melbourne · Advisory Board Prep",
+    "theme": "civic-gold"
+  },
+  "slides": [
+    {
+      "type": "title",
+      "eyebrow": "Invest Melbourne · Advisory Board · City of Melbourne 2026",
+      "headline": "Advisory Board Candidacy",
+      "subheadline": "Dr. Stephen Rando — an interview-preparation brief covering board alignment, credential mapping, anticipated questions and 2030 strategic contributions for Melbourne's $115 billion investment economy.",
+      "cta": "Board Brief · Credentials · Interview Q&A · 2030 Strategy"
+    },
+    {
+      "type": "proof",
+      "eyebrow": "The mandate, in three figures",
+      "headline": "What this Board exists to grow",
+      "subheadline": "Anchor every answer to the scale, the horizon and the reach of the mandate.",
+      "metrics": [
+        { "value": "$115B", "label": "Investment economy" },
+        { "value": "2030", "label": "Strategic horizon" },
+        { "value": "Global", "label": "FDI mandate" }
+      ]
+    },
+    {
+      "type": "section",
+      "eyebrow": "Section one",
+      "headline": "Board purpose & your fit",
+      "subheadline": "The Invest Melbourne Advisory Board exists to attract and shape investment at city scale. Every response, credential and strategic idea you offer should map back to one of its five stated purposes."
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Map every answer back to these",
+      "headline": "The Board's stated purposes",
+      "subheadline": "Four are detailed in the brief; confirm the fifth purpose before the interview.",
+      "cards": [
+        { "title": "A · Strategic advice", "body": "Provide strategic advice and independent thinking to inform policy and productive investment in the municipality." },
+        { "title": "B · Active advocacy", "body": "Champion and proactively advocate for Invest Melbourne to Australian and international business communities, government departments and industry associations." },
+        { "title": "C · Market insight", "body": "Provide critical understanding of business, market and industry trends, with insights that improve strategic business development." },
+        { "title": "D · Easier to operate", "body": "Advise on ways to streamline business processes and make it easier for the business community to operate in and with the city." }
+      ]
+    },
+    {
+      "type": "visual",
+      "eyebrow": "Your opening statement — the anchor",
+      "headline": "I sit at the intersection of technology, governance, investment strategy and civic leadership — precisely where a Board of this kind needs to operate to make Melbourne's $115 billion economy both competitive and durable through 2030 and beyond.",
+      "subheadline": "Use as your anchor. Adapt the register, hold the substance.",
+      "cta": "Dr. Stephen Rando"
+    },
+    {
+      "type": "section",
+      "eyebrow": "Section two",
+      "headline": "What makes you distinctive",
+      "subheadline": "Three things this Board does not currently have. Frame these if asked what you would add — be direct; the panel will respect economy of language."
+    },
+    {
+      "type": "cards",
+      "eyebrow": "Three things this Board does not have",
+      "headline": "Your distinctive contribution",
+      "subheadline": "Research frontier · Live relationships · Operator proximity.",
+      "cards": [
+        { "title": "Applied AI governance, at the research frontier", "body": "Active, peer-reviewed doctoral research producing frameworks that will inform national standards — not commentary on AI. A capability the Board can draw on so Melbourne's investment strategy is not behind the defining technology of the decade." },
+        { "title": "Live Indo-Pacific connectivity — active, not archived", "body": "Ongoing partnerships with IIT Palakkad, Deakin University and the Australia Africa Chamber of Commerce. Real relationships to real institutions, ready to serve Melbourne's international advocacy from day one." },
+        { "title": "Proximity to the operators the Board serves", "body": "Through GSR & Associates and direct fieldwork with manufacturing SMEs, current relationships with the $5–50M founder and operator cohort. I translate Board strategy into language they act on — and bring their voice back into deliberations." }
+      ]
+    },
+    {
+      "type": "closing",
+      "eyebrow": "Closing statement",
+      "headline": "Melbourne's $115 billion investment economy will be defined by those who understood that governance is not the cost of investment — it is the condition of it.",
+      "cta": "Dr. Stephen Rando · Invest Melbourne Advisory Board · City of Melbourne",
+      "note": "Deliver slowly. Let the final clause land before you stop."
+    }
+  ]
+}

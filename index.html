@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>FlowPitch · Invest Melbourne Advisory Board Prep</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- ===== TOP TOOLBAR ===== -->
+    <header class="topbar" id="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">F</span>
+        <span
+          class="deck-title"
+          id="deckTitle"
+          contenteditable="true"
+          spellcheck="false"
+          aria-label="Deck title"
+        ></span>
+      </div>
+      <div class="topbar-spacer"></div>
+      <button id="presentBtn" type="button" class="btn btn--primary">Present</button>
+      <button id="exportPdfBtn" type="button" class="btn">Export PDF</button>
+      <button id="downloadJsonBtn" type="button" class="btn btn--ghost">Download JSON</button>
+      <button id="resetDeckBtn" type="button" class="btn btn--ghost">Reset Deck</button>
+    </header>
+
+    <!-- ===== THUMBNAIL RAIL ===== -->
+    <aside class="rail" aria-label="Slides">
+      <div class="rail-head">Slides</div>
+      <div class="rail-list" id="railList" role="listbox" aria-label="Slide thumbnails"></div>
+      <div class="rail-actions">
+        <button class="mini-btn mini-btn--wide" id="addSlideBtn" type="button">+ Add slide</button>
+        <button class="mini-btn" id="dupSlideBtn" type="button">Duplicate</button>
+        <button class="mini-btn mini-btn--danger" id="delSlideBtn" type="button">Delete</button>
+        <button class="mini-btn" id="moveUpBtn" type="button">↑ Move up</button>
+        <button class="mini-btn" id="moveDownBtn" type="button">↓ Move down</button>
+      </div>
+    </aside>
+
+    <!-- ===== CENTRAL CANVAS ===== -->
+    <main class="canvas">
+      <div class="editor-slide-frame" id="editorFrame" aria-label="Slide editor"></div>
+      <div class="canvas-hint">Click any text to edit · changes autosave</div>
+    </main>
+
+    <!-- ===== INSPECTOR ===== -->
+    <aside class="inspector" aria-label="Slide settings">
+      <div class="insp-head">Slide settings</div>
+      <div class="field">
+        <label for="slideTypeSelect">Slide type</label>
+        <select id="slideTypeSelect">
+          <option value="title">Title</option>
+          <option value="section">Section</option>
+          <option value="content">Content</option>
+          <option value="cards">Cards</option>
+          <option value="proof">Proof / metrics</option>
+          <option value="process">Process</option>
+          <option value="beforeAfter">Before / After</option>
+          <option value="visual">Visual / quote</option>
+          <option value="closing">Closing</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Accent theme</label>
+        <div class="swatches" id="swatches">
+          <button class="swatch" data-theme="civic-gold"  style="background:linear-gradient(140deg,#e8b65a,#c8923a)" title="Civic Gold" aria-label="Civic Gold"></button>
+          <button class="swatch" data-theme="harbor-teal"  style="background:linear-gradient(140deg,#5ad7c8,#2b8f86)" title="Harbor Teal" aria-label="Harbor Teal"></button>
+          <button class="swatch" data-theme="violet-civic" style="background:linear-gradient(140deg,#a98bff,#6c4bd6)" title="Violet" aria-label="Violet"></button>
+          <button class="swatch" data-theme="ember"        style="background:linear-gradient(140deg,#ff8a5c,#d6492b)" title="Ember" aria-label="Ember"></button>
+        </div>
+      </div>
+      <div class="field">
+        <label for="noteField">Speaker note</label>
+        <textarea id="noteField" rows="5" placeholder="Notes for this slide…"></textarea>
+      </div>
+      <p class="insp-note" id="inspNote">
+        The selected slide uses the same renderer as Present Mode, so what you see here is what you present.
+      </p>
+    </aside>
+  </div>
+
+  <!-- ===== PRESENT MODE OVERLAY ===== -->
+  <section class="present" id="present" aria-hidden="true">
+    <div class="present-bg" id="presentBg">
+      <span class="float"></span>
+      <span class="float"></span>
+      <span class="float"></span>
+    </div>
+    <div class="present-progress"><span id="progressFill"></span></div>
+    <div class="present-stage">
+      <div class="present-frame" id="presentFrame"></div>
+    </div>
+    <button class="present-exit" id="exitPresentBtn" type="button">Esc · Exit</button>
+    <div class="present-nav">
+      <button class="nav-btn" id="prevBtn" type="button" aria-label="Previous slide">‹</button>
+      <button class="nav-btn" id="nextBtn" type="button" aria-label="Next slide">›</button>
+    </div>
+    <div class="present-dots" id="presentDots"></div>
+    <div class="present-counter"><b id="counterCur">1</b> / <span id="counterTot">1</span></div>
+  </section>
+
+  <!-- ===== PDF CAPTURE STAGE (off-screen) ===== -->
+  <div id="pdfStage" aria-hidden="true"></div>
+
+  <!-- ===== TOAST ===== -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
